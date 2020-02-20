@@ -9,7 +9,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "metabase" {
-  name         = "random-name"
+  name         = "random-name-changed"
   machine_type = "n1-standard-1"
   boot_disk {
     initialize_params {
