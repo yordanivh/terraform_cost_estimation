@@ -1,5 +1,8 @@
+variable "gcp_credentials" {}
+
 provider "google" {
   project = "Support Engineering Europe"
+  credentials = var.gcp_credentials
   region  = "us-central1"
   zone    = "us-central1-c"
 }
