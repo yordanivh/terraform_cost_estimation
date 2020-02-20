@@ -1,10 +1,10 @@
 variable "gcp_credentials" {}
 
 provider "google" {
-  project = "Support Engineering Europe"
+  
   credentials = var.gcp_credentials
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  region      = "europe-north1"
+  zone        = "europe-north1-a"
 }
 
 resource "google_compute_instance" "metabase" {
