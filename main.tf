@@ -38,7 +38,7 @@ resource "google_compute_instance" "metabase" {
 
 resource "google_compute_instance" "metabas1" {
   name         = "random-name-changed"
-  machine_type = "n1-highmem-3"
+  machine_type = "n1-highmem-4"
   
   tags = ["foo", "bar"]
   
