@@ -10,7 +10,7 @@ provider "google" {
 
 resource "google_compute_instance" "metabase" {
   name         = "random-name-changed"
-  machine_type = "n1-standard-1"
+  machine_type = "n2-standard-2"
   
   tags = ["foo", "bar"]
   
