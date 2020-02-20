@@ -5,12 +5,12 @@ provider "google" {
   credentials = var.gcp_credentials
   project     = "sup-eng-eu"
   region      = "europe-north1"
-  #zone        = "europe-north1-a"
+  zone        = "europe-north1-a"
 }
 
 resource "google_compute_instance" "metabase" {
   name         = "random-name-changed"
-  machine_type = "n2-standard-2"
+  machine_type = "n1-highmem-2"
   
   tags = ["foo", "bar"]
   
