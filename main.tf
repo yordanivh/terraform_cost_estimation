@@ -5,7 +5,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "metabase" {
-  name         = module.metabase_gce_label.name
+  name         = "random-name"
   machine_type = "n1-standard-1"
   boot_disk {
     initialize_params {
