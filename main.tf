@@ -8,25 +8,7 @@ provider "google" {
   zone        = "europe-north1-a"
 }
 
-resource "google_compute_instance" "metabase" {
-  name         = "random-name-changed"
-  machine_type = "n1-highmem-2"
-  
-  tags = ["foo", "bar"]
-  
-  metadata = {
-    foo = "bar"
+provider "null" {}
+
+resource "null_resource" "named" {
   }
-  
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-9"
-    }
-  }
-  
-  network_interface {
-    network = "default"
-    access_config {
-    }
-  }
-}
