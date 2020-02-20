@@ -8,6 +8,12 @@ provider "google" {
   zone        = "europe-north1-a"
 }
 
+provider "null" {}
+
+resource "null_resource" "named"{
+  
+  }
+
 resource "google_compute_instance" "metabase" {
   name         = "random-name-changed"
   machine_type = "n1-highmem-2"
